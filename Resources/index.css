@@ -1,0 +1,15 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+#mainTitle {
+    font-weight: 800;
+}
+
+.introduction {
+    font-weight: 800;
+}
+
+#listOfDirectors {
+    font-weight: 300;
+}
