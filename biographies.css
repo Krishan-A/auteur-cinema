@@ -1,0 +1,24 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+    margin: 5%;
+    color: #ffffff;
+    background-color: #121212;
+}
+
+#mainTitle {
+    font-weight: 800;
+    text-align: center;
+}
+
+main p.introduction {
+    font-weight: 500;
+    margin: 0 0 0 4.25%;
+}
+
+main ul.introduction {
+    font-weight: 500;
+    margin: 0 0 0 4.25%;
+}
+
+
+
