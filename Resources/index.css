@@ -1,21 +1,30 @@
 body {
     font-family: 'Gothic A1', sans-serif;
+    margin: 5%;
 }
 
 #mainTitle {
     font-weight: 800;
+    text-align: center;
 }
 
-.introduction {
-    font-weight: 800;
+main p.introduction {
+    font-weight: 500;
+    margin: 0 0 0 4.25%;
+}
+
+main ul.introduction {
+    font-weight: 500;
+    margin: 0 0 0 4.25%;
 }
 
 
 
 .listOfDirectors {
     font-weight: 300;
-    display: inline-block;
-    width: 95%;
+    width: 17%;
+    float: left;
+    text-align: center;
 }
 
 .listOfDirectors li{
@@ -23,6 +32,6 @@ body {
 }
 
 .listOfDirectors li img{
-    width: 10%;
-    height: 13.5%;
+    width: 80%;
+    height: 108%;
 }
