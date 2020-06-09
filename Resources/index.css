@@ -10,6 +10,19 @@ body {
     font-weight: 800;
 }
 
-#listOfDirectors {
+
+
+.listOfDirectors {
     font-weight: 300;
+    display: inline-block;
+    width: 95%;
+}
+
+.listOfDirectors li{
+    list-style-type: none;
+}
+
+.listOfDirectors li img{
+    width: 10%;
+    height: 13.5%;
 }
