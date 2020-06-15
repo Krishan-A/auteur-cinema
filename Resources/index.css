@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 
-main p.introduction {
+.introduction {
     font-weight: 500;
     margin: 0 0 0 4.25%;
 }
@@ -18,24 +18,28 @@ main p.introduction {
 @media only screen and (max-width: 449px){
     .listOfDirectors {
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 5%;
     }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 1099px){
     .listOfDirectors {
         grid-template-columns: repeat(3, 1fr);
+        row-gap: 5%;
     }
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1499px){
     .listOfDirectors {
         grid-template-columns: repeat(4, 1fr);
+        row-gap: 5%;
     }
 }
 
 @media only screen and (min-width: 1500px) {
     .listOfDirectors {
         grid-template-columns: repeat(5, 1fr);
+        row-gap: 5%;
     }
 }
 
@@ -55,9 +59,21 @@ main p.introduction {
 
 .profilePicture {
     width: 100%;
-    height: 135%;
+    height: 100%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    /*padding: 2%;
-    background-color: #ffffff;*/
+    padding: 2%;
+    background-color: #7C7C7C;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.profilePicture:hover {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    padding: 2%;
+    background-color: #ffffff;
+    cursor: pointer;
 }

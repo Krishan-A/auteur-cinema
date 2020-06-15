@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 
-main p.introduction {
+.introduction {
     font-weight: 500;
     margin: 0 0 0 4.25%;
 }
