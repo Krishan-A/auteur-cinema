@@ -8,6 +8,7 @@ body {
 #mainTitle {
     font-weight: 800;
     text-align: center;
+    margin: 2em;
 }
 
 .introduction {
@@ -55,6 +56,7 @@ body {
     background-color: #7C7C7C;
     cursor: pointer;
     transition: 0.5s ease 0s;
+    border-radius: 0.25em;
 }
 
 .profilePicture:hover {
@@ -64,4 +66,5 @@ body {
     padding: 2%;
     background-color: #ffffff;
     cursor: pointer;
+    border-radius: 0.25em;
 }

@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #7C7C7C;
+    border-radius: 0.5em;
 }
 
 #currentPage {
@@ -25,21 +26,10 @@
 #navBarList {
     display: flex;
     flex-grow: 1;
-    /*justify-content: space-around;
-    height: 3em;
-    width: 40%;
-    align-items: center;*/
 }
 
-#navBarBurger {
+.navBarButton {
     display: hidden;
-}
-
-#burgerLines {
-    width: 25px;
-    height: 3px;
-    color: #ffffff;
-    margin: 5px;
 }
 
 #navBarItem {
@@ -58,7 +48,63 @@
 
 /* Breakpoint, switch to mobile view */
 @media only screen and (max-width: 999px){
-    body {
-        display: none;
+    .listOfDirectors {
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    #navBarItem {
+        transform: translateX(50px);
+        transition: transform 0.5s, opacity 0.5s ease-in-out;
+        opacity: 0;
+    }
+
+    .navBarButton {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+      }
+
+      .navBarBurger {
+        width: 50px;
+        height: 6px;
+        background: #ffffff;
+        border-radius: 5px;
+        transition: all 0.25s ease-in-out;
+      }
+
+      .navBarBurger::before,
+      .navBarBurger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .navBarBurger::before {
+        transform: translateY(-16px);
+      }
+
+      .navBarBurger::after {
+        transform: translateY(16px);
+      }
+
+      /* ANIMATION */
+      .navBarButton.open .navBarBurger {
+        background: transparent;
+      }
+
+      .navBarButton.open .navBarBurger::before {
+        transform: rotate(-45deg);
+      }
+
+      .navBarButton.open .navBarBurger::after {
+        transform: rotate(45deg);
+      }
 }
