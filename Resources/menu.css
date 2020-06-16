@@ -57,6 +57,8 @@
 }
 
 /* Breakpoint, switch to mobile view */
-@media only screen and (max-width: 769px){
-
+@media only screen and (max-width: 999px){
+    body {
+        display: none;
+    }
 }
