@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#navigationBar {
+    width: 100% !important;
+    padding: 1em 4em;
+    margin: 4em 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7C7C7C;
+}
+
+#currentPage {
+    padding-left: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    flex-grow: 15;
+}
+
+#navBarList {
+    display: flex;
+    flex-grow: 1;
+    /*justify-content: space-around;
+    height: 3em;
+    width: 40%;
+    align-items: center;*/
+}
+
+#navBarBurger {
+    display: hidden;
+}
+
+#burgerLines {
+    width: 25px;
+    height: 3px;
+    color: #ffffff;
+    margin: 5px;
+}
+
+#navBarItem {
+    margin: 0 1em;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+}
+
+#navBarItem a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Breakpoint, switch to mobile view */
+@media only screen and (max-width: 769px){
+
+}

@@ -1,54 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#navigationBar {
-    width: 100% !important;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #7C7C7C;
-}
-
-#currentPage {
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
-
-#navBarList {
-    display: flex;
-    justify-content: space-around;
-    height: 3em;
-    width: 40%;
-    align-items: center;
-}
-
-#navBarBurger {
-    display: hidden;
-}
-
-#burgerLines {
-    width: 25px;
-    height: 3px;
-    color: #ffffff;
-    margin: 5px;
-}
-
-#navBarItem {
-    text-transform: uppercase;
-    list-style-type: none;
-    font-size: 1em;
-    letter-spacing: 0.2em;
-}
-
-#navBarItem a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-}
-
 body {
     font-family: 'Gothic A1', sans-serif;
     margin: 5%;
@@ -64,19 +13,6 @@ body {
 .introduction {
     font-weight: 500;
     margin: 0 0 0 4.25%;
-}
-
-/* Breakpoint, switch to mobile view */
-@media only screen and (max-width: 769px){
-    body {
-        overflow-x: hidden;
-    }
-
-    #navBarBurger {
-    }
-
-    #navBarItem {
-    }
 }
 
 @media only screen and (min-width: 770px) and (max-width: 1099px){
@@ -98,23 +34,22 @@ body {
 }
 
 .listOfDirectors {
+    grid-template-columns: repeat(5, 1fr);
     font-weight: 300;
     display: grid;
     column-gap: 2em;
-    row-gap: 2em;
-    justify-items: center;
-    text-align: center;
+    row-gap: 4em;
 }
 
 .listOfDirectors li{
     list-style-type: none;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .profilePicture {
     width: 100%;
-    height: 100%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     padding: 2%;
@@ -125,7 +60,6 @@ body {
 
 .profilePicture:hover {
     width: 100%;
-    height: 100%;
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
     padding: 2%;
